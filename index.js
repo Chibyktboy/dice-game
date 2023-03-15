@@ -6,7 +6,7 @@ return Math.floor(Math.random() * (_images.length -1));
 
 document.querySelectorAll("img")[0].setAttribute("src" , _images[randomNumber()]);
 
-document.querySelectorAll("img")[1].setAttribute("src" , _images[randomNumber()]
+document.querySelectorAll("img")[1].setAttribute("src" , _images[randomNumber()]);
 
  if (randomNumber1 > randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 wins"
