@@ -4,9 +4,16 @@ let randomNumber = function generateNumbers(){
 return Math.floor(Math.random() * (_images.length -1));
 }
 
-document.querySelectorAll("img")[0].setAttribute("src" , _images[randomNumber()]);
+function queryUpdateImage(number){
+  document.querySelectorAll("img")[number].setAttribute("src" , _images[randomNumber()]);
+}
+queryUpdateImage(0);
+queryUpdateImage(1);
 
-document.querySelectorAll("img")[1].setAttribute("src" , _images[randomNumber()]);
+function reRender(){
+  queryUpdateImage(0);
+  queryUpdateImage(1);
+}
 
  if (randomNumber1 > randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 wins"
