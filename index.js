@@ -13,6 +13,7 @@ queryUpdateImage(1);
 function reRender(){
   queryUpdateImage(0);
   queryUpdateImage(1);
+alert("Hi")
 }
 
  if (randomNumber1 > randomNumber2){
