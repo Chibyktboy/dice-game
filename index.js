@@ -1,15 +1,12 @@
+const _images = ["images/dice1.png","images/dice2.png","images/dice3.png","images/dice4.png","images/dice5.png","images/dice6.png"]
 
-var randomNumber1 = Math.floor(Math.random() * 6) + 1 ;
-var randomImage1 = "dice" + randomNumber1 + ".png"
-var randomImageSource = "images/" + randomImage1
- document.querySelectorAll("img")[0].setAttribute("src" , randomImageSource);
+let randomNumber = function generateNumbers(){
+return Math.floor(Math.random() * (_images.length -1));
+}
 
+document.querySelectorAll("img")[0].setAttribute("src" , _images[randomNumber()]);
 
- var randomNumber2 = Math.floor(Math.random() * 6) + 1;
- var randomImage2 = "dice" + randomNumber2 + ".png"
- var randomImageSource2 = "images/" + randomImage2
-
- document.querySelectorAll("img")[1].setAttribute("src" , randomImageSource2)
+document.querySelectorAll("img")[1].setAttribute("src" , _images[randomNumber()]
 
  if (randomNumber1 > randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 wins"
@@ -24,17 +21,3 @@ var randomImageSource = "images/" + randomImage1
  }
 
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
- 
